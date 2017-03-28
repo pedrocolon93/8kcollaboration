@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using laszip.net;
-using UnityEditor;
+
 public class LoadLidar : MonoBehaviour
 {
     /// <summary>

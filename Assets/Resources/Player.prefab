@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4308308068476582}
   - component: {fileID: 114545002528974328}
+  - component: {fileID: 114148761896580236}
+  - component: {fileID: 114454589159068492}
   m_Layer: 0
   m_Name: Player
   m_TagString: PlayerController
@@ -40,6 +42,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114148761896580236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177041336515504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a669d15f0035bbf4889c8092b5bcd201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerIndex: 0
+  showHandCursor: 1
+  gripHandTextureLeft: {fileID: 2800000, guid: fe3f77622d9ffa54d9613a88a281b081, type: 3}
+  gripHandTextureRight: {fileID: 2800000, guid: 475d892be250472448901e2ac7e4f3da,
+    type: 3}
+  releaseHandTextureLeft: {fileID: 2800000, guid: 3720eb6e26ac4f2429ddb25b10057c34,
+    type: 3}
+  releaseHandTextureRight: {fileID: 2800000, guid: deab68507f779a144b807ddc9587f2fe,
+    type: 3}
+  normalHandTextureLeft: {fileID: 2800000, guid: ca90eb243c64b2c44a13130b643a3b8c,
+    type: 3}
+  normalHandTextureRight: {fileID: 2800000, guid: 55b9da46e4eef3f4cafab36e66796aeb,
+    type: 3}
+  smoothFactor: 10
+  allowHandClicks: 1
+  controlMouseCursor: 0
+  controlMouseDrag: 0
+  interactionListeners: []
+  debugText: {fileID: 0}
+  instance: {fileID: 0}
+--- !u!114 &114454589159068492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177041336515504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377cf6bfc671cfc489f19d59b633d908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  draggableObjects: []
+  dragSpeed: 3
+  minZ: -10000
+  maxZ: 10000
+  modeText: {fileID: 0}
+  manipulatedCamera: {fileID: 0}
+  movementStrength: 10
+  zoominlimit: 1400
+  zoomoutlimit: -1400
+  SelectedObjects: []
 --- !u!114 &114545002528974328
 MonoBehaviour:
   m_ObjectHideFlags: 1
