@@ -16,11 +16,11 @@ public class CanvasManager : MonoBehaviour {
 
     public void DisableCanvas()
     {
-        gameObject.SetActive(false);
+        gameObject.GetComponent<Canvas>().enabled = false;
     }
 
     public void EnableCanvas()
     {
-        gameObject.SetActive(true);
+        gameObject.GetComponent<Canvas>().enabled = true;
     }
 }

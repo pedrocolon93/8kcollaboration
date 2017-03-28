@@ -46,7 +46,7 @@ public class SpawnWaldo : MonoBehaviour
                 }
             }
         }
-        WaldoRoot.GetComponentInParent<Transform>().position = new Vector3(randx,randheight,randz);
+        GameObject.Find("Waldo").GetComponent<Transform>().position = new Vector3(randx,randheight,randz);
         
     }
 

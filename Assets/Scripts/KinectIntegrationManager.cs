@@ -47,8 +47,8 @@ public class KinectIntegrationManager : MonoBehaviour {
     public float movementStrength = 10;
 
     private GestureManager gestureManager;
-    public float zoominlimit = 1400;
-    public float zoomoutlimit = -1400;
+    public float zoominlimit = 10;
+    public float zoomoutlimit = 14000;
     private Vector3 newPosition;
     private Vector3 oldPosition;
     private Vector3 originalposition;
@@ -142,7 +142,7 @@ public class KinectIntegrationManager : MonoBehaviour {
                         else
                         {
                             //we did hit waldo!
-                            GameObject.Find("WaldoManager").GetComponent<CanvasManager>().EnableCanvas();
+                            GameObject.Find("Canvas").GetComponent<CanvasManager>().EnableCanvas();
                         }
                         
                     }
