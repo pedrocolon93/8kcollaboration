@@ -23,12 +23,21 @@ public class SpawnWaldo : MonoBehaviour
             mesh.gameObject.AddComponent<MeshCollider>();
         }
     }
-
+    public int maxAttempts = 10000;
     public void SpawnWaldoRandom()
     {
         bool findingLocation = true;
+        var counter = 0;
         while (findingLocation)
         {
+            if (counter >= maxAttempts)
+            {
+                findingLocation = false;
+                break;
+            }
+            else
+                counter++;
+
             float randx = UnityEngine.Random.Range(TerrainGameObject.GetComponentInChildren<MeshRenderer>().bounds.min.x,
                 TerrainGameObject.GetComponentInChildren<MeshRenderer>().bounds.max.x);
             float minz = 0, maxz = 0;
@@ -57,10 +66,8 @@ public class SpawnWaldo : MonoBehaviour
                     //Try to see if we can actually see straight down, if not move it.  
                     if (componentsInChild.Raycast(ray, out hit, 2.0f * maxHeight))
                     {
-                        MeshCollider[] mshs = Array.Find(CityGameObject.GetComponentsInChildren<MeshCollider>();
-                        if (Array.Find(CityGameObject.GetComponentsInChildren<MeshCollider>(), collider => collider == hit.collider.GetComponent<MeshCollider>())==null)
-                        {
-
+                        if(WaldoRoot.gameObject.GetComponentInParent<BoxCollider>().)
+                        if(hit.collider.gameObject == componentsInChild.gameObject) { 
                             Debug.Log("Hit point: " + hit.point);
                             randheight = hit.point.y;
                             GameObject.Find("Waldo").GetComponent<Transform>().position = new Vector3(randx, randheight, randz);
@@ -72,6 +79,7 @@ public class SpawnWaldo : MonoBehaviour
             }
 
         }
+
     }
 
     // Update is called once per frame
