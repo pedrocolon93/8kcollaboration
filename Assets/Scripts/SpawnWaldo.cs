@@ -23,7 +23,7 @@ public class SpawnWaldo : MonoBehaviour
             mesh.gameObject.AddComponent<MeshCollider>();
         }
     }
-    public int maxAttempts = 10000;
+    public int maxAttempts = 1000000;
     public void SpawnWaldoRandom()
     {
         bool findingLocation = true;
@@ -33,6 +33,7 @@ public class SpawnWaldo : MonoBehaviour
             if (counter >= maxAttempts)
             {
                 findingLocation = false;
+                GameObject.Find("Waldo").GetComponent<Transform>().position = new Vector3(0, 0, 0);
                 break;
             }
             else
@@ -66,11 +67,14 @@ public class SpawnWaldo : MonoBehaviour
                     //Try to see if we can actually see straight down, if not move it.  
                     if (componentsInChild.Raycast(ray, out hit, 2.0f * maxHeight))
                     {
-                        if(WaldoRoot.gameObject.GetComponentInParent<BoxCollider>().)
-                        if(hit.collider.gameObject == componentsInChild.gameObject) { 
+                        randheight = hit.point.y;
+                    }
+                    GameObject.Find("Waldo").GetComponent<Transform>().position = new Vector3(randx, randheight, randz);
+                    if (Physics.Raycast(ray, out hit))
+                    {
+                        if (hit.collider.gameObject.tag.Equals("Waldo"))
+                        {
                             Debug.Log("Hit point: " + hit.point);
-                            randheight = hit.point.y;
-                            GameObject.Find("Waldo").GetComponent<Transform>().position = new Vector3(randx, randheight, randz);
                             findingLocation = false;
                             break;
                         }
