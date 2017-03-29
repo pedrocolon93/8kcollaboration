@@ -150,7 +150,7 @@ public class GestureManager : MonoBehaviour, KinectGestures.GestureListenerInter
 		if(!manager || (userIndex != playerIndex))
 			return;
         playerid = userId;
-        userId = userIndex;
+//        userId = userIndex;
         // detect these user specific gestures
         /*manager.DetectGesture(userId, KinectGestures.Gestures.SwipeLeft);
 		manager.DetectGesture(userId, KinectGestures.Gestures.SwipeRight);
@@ -163,7 +163,7 @@ public class GestureManager : MonoBehaviour, KinectGestures.GestureListenerInter
         manager.DetectGesture(userId, KinectGestures.Gestures.RaiseLeftHand);
         manager.DetectGesture(userId, KinectGestures.Gestures.ZoomIn);
         manager.DetectGesture(userId, KinectGestures.Gestures.ZoomOut);
-        manager.DetectGesture(userId,KinectGestures.Gestures.Wheel);
+//        manager.DetectGesture(userId,KinectGestures.Gestures.Wheel);
         if (gestureInfo != null)
 		{
 			gestureInfo.text = "Swipe left, right or up to change the slides.";

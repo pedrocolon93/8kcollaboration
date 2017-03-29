@@ -136,6 +136,31 @@ ModelImporter:
     4300044: CityEngineMaterial_2_m_MeshPart8
     4300046: CityEngineMaterial_2_m_MeshPart9
     4300048: CityEngineMaterial_1_m
+    6400000: CityEngineMaterial_10_m
+    6400002: CityEngineMaterial_11_m
+    6400004: CityEngineMaterial_12_m
+    6400006: CityEngineMaterial_13_m
+    6400008: CityEngineMaterial_14_m
+    6400010: CityEngineMaterial_1_m
+    6400012: CityEngineMaterial_2_m_MeshPart0
+    6400014: CityEngineMaterial_2_m_MeshPart1
+    6400016: CityEngineMaterial_2_m_MeshPart2
+    6400018: CityEngineMaterial_2_m_MeshPart3
+    6400020: CityEngineMaterial_2_m_MeshPart4
+    6400022: CityEngineMaterial_2_m_MeshPart5
+    6400024: CityEngineMaterial_2_m_MeshPart6
+    6400026: CityEngineMaterial_2_m_MeshPart7
+    6400028: CityEngineMaterial_2_m_MeshPart8
+    6400030: CityEngineMaterial_2_m_MeshPart9
+    6400032: CityEngineMaterial_3_m_MeshPart0
+    6400034: CityEngineMaterial_3_m_MeshPart1
+    6400036: CityEngineMaterial_4_m
+    6400038: CityEngineMaterial_5_m
+    6400040: CityEngineMaterial_6_m
+    6400042: CityEngineMaterial_7_m
+    6400044: CityEngineMaterial_8_m
+    6400046: CityEngineMaterial_9_m
+    6400048: CityEngineMaterial_m
     9500000: //RootNode
   materials:
     importMaterials: 1

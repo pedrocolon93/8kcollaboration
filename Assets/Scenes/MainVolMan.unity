@@ -20003,7 +20003,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 479968766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386a18501f30169458164e4f52a2f7da, type: 3}
+  m_Script: {fileID: 11500000, guid: 252cc1e84442ef54ea68a3abd3164115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &479968769
@@ -35433,11 +35433,10 @@ GameObject:
   m_Component:
   - component: {fileID: 843360952}
   - component: {fileID: 843360953}
-  - component: {fileID: 843360954}
   - component: {fileID: 843360955}
   - component: {fileID: 843360956}
   - component: {fileID: 843360957}
-  - component: {fileID: 843360958}
+  - component: {fileID: 843360954}
   m_Layer: 0
   m_Name: 8kCamera
   m_TagString: MainCamera
@@ -35498,11 +35497,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 843360951}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68ec2fe99d1108b9d0006a298d76c639, type: 3}
+  m_Script: {fileID: 11500000, guid: 390f2fa5086e70945a91fe7b2bd58be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myTerrain: {fileID: 763875869}
+  heightMaxMultiplier: 5
 --- !u!114 &843360955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35545,19 +35546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e5a3b18b61b7d4184d023518bafd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &843360958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 843360951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 215315606ae9ab1498ffdcdf036b6e21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myTerrain: {fileID: 763875869}
-  heightMaxMultiplier: 5
 --- !u!1 &843961243
 GameObject:
   m_ObjectHideFlags: 0
@@ -38658,6 +38646,7 @@ GameObject:
   - component: {fileID: 909034307}
   - component: {fileID: 909034306}
   - component: {fileID: 909034304}
+  - component: {fileID: 909034305}
   m_Layer: 0
   m_Name: KinectController
   m_TagString: Untagged
@@ -38678,6 +38667,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   maxPlayers: 2
+--- !u!114 &909034305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 909034303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b976a1901bb5d478901026c07729cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &909034306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82531,13 +82531,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1984312068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2cb5977f43b8384ebc3d2601a88892d, type: 3}
+  m_Script: {fileID: 11500000, guid: a4e7e1e9b426e7f4a8b24494bc8dbe8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   WaldoRoot: {fileID: 1454931566}
-  TerrainGameObject: {fileID: 763875869}
+  TerrainGameObject: {fileID: 39215100}
   CityGameObject: {fileID: 620691111}
-  maxAttempts: 1000
+  maxAttempts: 1000000
 --- !u!4 &1984312070
 Transform:
   m_ObjectHideFlags: 0
@@ -84481,7 +84481,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2031296823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fbe83dd224a6164b9277201f59eaa21, type: 3}
+  m_Script: {fileID: 11500000, guid: 8dec41d4d4436204d98bc70e3cd72f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2031296826
