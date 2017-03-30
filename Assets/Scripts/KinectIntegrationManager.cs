@@ -44,7 +44,7 @@ public class KinectIntegrationManager : MonoBehaviour {
 	private float speed = 2.0f;
 	private float zoomSpeed = 2.0f;
 
-    public float movementStrength = 10;
+    public float movementStrength = 3;
 
     private GestureManager gestureManager;
     public float zoominlimit = 10;
@@ -75,13 +75,11 @@ public class KinectIntegrationManager : MonoBehaviour {
 
         if (gestureManager.IsZoomIn())
         {
-            if (manipulatedCamera.transform.position.y < zoominlimit)
-                manipulatedCamera.transform.position += Vector3.up * movementStrength * gestureManager.GetZoomFactor() / 10;
+            manipulatedCamera.transform.position += Vector3.down * movementStrength * gestureManager.GetZoomFactor() / 10;
         }
         if (gestureManager.IsZoomOut())
         {
-            if (manipulatedCamera.transform.position.y > zoomoutlimit)
-                manipulatedCamera.transform.position += Vector3.down * movementStrength * gestureManager.GetZoomFactor() / 10;
+            manipulatedCamera.transform.position += Vector3.up * movementStrength * gestureManager.GetZoomFactor() / 10;
         }
         
         

@@ -147,6 +147,7 @@ public class GestureManager : MonoBehaviour, KinectGestures.GestureListenerInter
        
 		// the gestures are allowed for the primary user only
 		KinectManager manager = KinectManager.Instance;
+        playerIndex = userIndex;
 		if(!manager || (userIndex != playerIndex))
 			return;
         playerid = userId;

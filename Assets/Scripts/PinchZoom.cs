@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PinchZoom : MonoBehaviour
 {
-    public float perspectiveZoomSpeed = 5f;        // The rate of change of the field of view in perspective mode.
+    public float perspectiveZoomSpeed = 20f;        // The rate of change of the field of view in perspective mode.
     public float orthoZoomSpeed = 0.5f;        // The rate of change of the orthographic size in orthographic mode.
 
 
@@ -32,7 +32,7 @@ public class PinchZoom : MonoBehaviour
            
             // Otherwise change the field of view based on the change in distance between the touches.
             Vector3 camtransform = transform.position;
-            camtransform.z += deltaMagnitudeDiff * perspectiveZoomSpeed;
+            camtransform.y -= (deltaMagnitudeDiff * perspectiveZoomSpeed);
             transform.position = camtransform;
             // Clamp the field of view to make sure it's between 0 and 180.
            // camtransform.z = Mathf.Clamp(Camera.main.fieldOfView, GetComponent<KinectIntegrationManager>().zoomoutlimit, GetComponent<KinectIntegrationManager>().zoominlimit);

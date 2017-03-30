@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 76babb4c338cdb349844a11bf2b5cb29
+timeCreated: 1490838796
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CityEngineMaterial_10_m
+    100002: CityEngineMaterial_11_m
+    100004: CityEngineMaterial_12_m
+    100006: CityEngineMaterial_13_m
+    100008: CityEngineMaterial_14_m
+    100010: CityEngineMaterial_1_m
+    100012: CityEngineMaterial_2_m
+    100014: CityEngineMaterial_2_m_MeshPart0
+    100016: CityEngineMaterial_2_m_MeshPart1
+    100018: CityEngineMaterial_2_m_MeshPart2
+    100020: CityEngineMaterial_2_m_MeshPart3
+    100022: CityEngineMaterial_2_m_MeshPart4
+    100024: CityEngineMaterial_2_m_MeshPart5
+    100026: CityEngineMaterial_2_m_MeshPart6
+    100028: CityEngineMaterial_2_m_MeshPart7
+    100030: CityEngineMaterial_2_m_MeshPart8
+    100032: CityEngineMaterial_2_m_MeshPart9
+    100034: CityEngineMaterial_3_m
+    100036: CityEngineMaterial_3_m_MeshPart0
+    100038: CityEngineMaterial_3_m_MeshPart1
+    100040: CityEngineMaterial_4_m
+    100042: CityEngineMaterial_5_m
+    100044: CityEngineMaterial_6_m
+    100046: CityEngineMaterial_7_m
+    100048: CityEngineMaterial_8_m
+    100050: CityEngineMaterial_9_m
+    100052: CityEngineMaterial_m
+    100054: //RootNode
+    400000: CityEngineMaterial_10_m
+    400002: CityEngineMaterial_11_m
+    400004: CityEngineMaterial_12_m
+    400006: CityEngineMaterial_13_m
+    400008: CityEngineMaterial_14_m
+    400010: CityEngineMaterial_1_m
+    400012: CityEngineMaterial_2_m
+    400014: CityEngineMaterial_2_m_MeshPart0
+    400016: CityEngineMaterial_2_m_MeshPart1
+    400018: CityEngineMaterial_2_m_MeshPart2
+    400020: CityEngineMaterial_2_m_MeshPart3
+    400022: CityEngineMaterial_2_m_MeshPart4
+    400024: CityEngineMaterial_2_m_MeshPart5
+    400026: CityEngineMaterial_2_m_MeshPart6
+    400028: CityEngineMaterial_2_m_MeshPart7
+    400030: CityEngineMaterial_2_m_MeshPart8
+    400032: CityEngineMaterial_2_m_MeshPart9
+    400034: CityEngineMaterial_3_m
+    400036: CityEngineMaterial_3_m_MeshPart0
+    400038: CityEngineMaterial_3_m_MeshPart1
+    400040: CityEngineMaterial_4_m
+    400042: CityEngineMaterial_5_m
+    400044: CityEngineMaterial_6_m
+    400046: CityEngineMaterial_7_m
+    400048: CityEngineMaterial_8_m
+    400050: CityEngineMaterial_9_m
+    400052: CityEngineMaterial_m
+    400054: //RootNode
+    2300000: CityEngineMaterial_10_m
+    2300002: CityEngineMaterial_11_m
+    2300004: CityEngineMaterial_12_m
+    2300006: CityEngineMaterial_13_m
+    2300008: CityEngineMaterial_14_m
+    2300010: CityEngineMaterial_1_m
+    2300012: CityEngineMaterial_2_m_MeshPart0
+    2300014: CityEngineMaterial_2_m_MeshPart1
+    2300016: CityEngineMaterial_2_m_MeshPart2
+    2300018: CityEngineMaterial_2_m_MeshPart3
+    2300020: CityEngineMaterial_2_m_MeshPart4
+    2300022: CityEngineMaterial_2_m_MeshPart5
+    2300024: CityEngineMaterial_2_m_MeshPart6
+    2300026: CityEngineMaterial_2_m_MeshPart7
+    2300028: CityEngineMaterial_2_m_MeshPart8
+    2300030: CityEngineMaterial_2_m_MeshPart9
+    2300032: CityEngineMaterial_3_m_MeshPart0
+    2300034: CityEngineMaterial_3_m_MeshPart1
+    2300036: CityEngineMaterial_4_m
+    2300038: CityEngineMaterial_5_m
+    2300040: CityEngineMaterial_6_m
+    2300042: CityEngineMaterial_7_m
+    2300044: CityEngineMaterial_8_m
+    2300046: CityEngineMaterial_9_m
+    2300048: CityEngineMaterial_m
+    3300000: CityEngineMaterial_10_m
+    3300002: CityEngineMaterial_11_m
+    3300004: CityEngineMaterial_12_m
+    3300006: CityEngineMaterial_13_m
+    3300008: CityEngineMaterial_14_m
+    3300010: CityEngineMaterial_1_m
+    3300012: CityEngineMaterial_2_m_MeshPart0
+    3300014: CityEngineMaterial_2_m_MeshPart1
+    3300016: CityEngineMaterial_2_m_MeshPart2
+    3300018: CityEngineMaterial_2_m_MeshPart3
+    3300020: CityEngineMaterial_2_m_MeshPart4
+    3300022: CityEngineMaterial_2_m_MeshPart5
+    3300024: CityEngineMaterial_2_m_MeshPart6
+    3300026: CityEngineMaterial_2_m_MeshPart7
+    3300028: CityEngineMaterial_2_m_MeshPart8
+    3300030: CityEngineMaterial_2_m_MeshPart9
+    3300032: CityEngineMaterial_3_m_MeshPart0
+    3300034: CityEngineMaterial_3_m_MeshPart1
+    3300036: CityEngineMaterial_4_m
+    3300038: CityEngineMaterial_5_m
+    3300040: CityEngineMaterial_6_m
+    3300042: CityEngineMaterial_7_m
+    3300044: CityEngineMaterial_8_m
+    3300046: CityEngineMaterial_9_m
+    3300048: CityEngineMaterial_m
+    4300000: CityEngineMaterial_14_m
+    4300002: CityEngineMaterial_9_m
+    4300004: CityEngineMaterial_4_m
+    4300006: CityEngineMaterial_7_m
+    4300008: CityEngineMaterial_6_m
+    4300010: CityEngineMaterial_10_m
+    4300012: CityEngineMaterial_13_m
+    4300014: CityEngineMaterial_12_m
+    4300016: CityEngineMaterial_3_m_MeshPart0
+    4300018: CityEngineMaterial_3_m_MeshPart1
+    4300020: CityEngineMaterial_5_m
+    4300022: CityEngineMaterial_8_m
+    4300024: CityEngineMaterial_m
+    4300026: CityEngineMaterial_11_m
+    4300028: CityEngineMaterial_2_m_MeshPart0
+    4300030: CityEngineMaterial_2_m_MeshPart1
+    4300032: CityEngineMaterial_2_m_MeshPart2
+    4300034: CityEngineMaterial_2_m_MeshPart3
+    4300036: CityEngineMaterial_2_m_MeshPart4
+    4300038: CityEngineMaterial_2_m_MeshPart5
+    4300040: CityEngineMaterial_2_m_MeshPart6
+    4300042: CityEngineMaterial_2_m_MeshPart7
+    4300044: CityEngineMaterial_2_m_MeshPart8
+    4300046: CityEngineMaterial_2_m_MeshPart9
+    4300048: CityEngineMaterial_1_m
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

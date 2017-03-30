@@ -66,7 +66,7 @@ MonoBehaviour:
     type: 3}
   normalHandTextureRight: {fileID: 2800000, guid: 55b9da46e4eef3f4cafab36e66796aeb,
     type: 3}
-  smoothFactor: 10
+  smoothFactor: 9
   allowHandClicks: 1
   controlMouseCursor: 0
   controlMouseDrag: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
   maxZ: 10000
   modeText: {fileID: 0}
   manipulatedCamera: {fileID: 0}
-  movementStrength: 10
+  movementStrength: 2
   zoominlimit: 1400
   zoomoutlimit: -1400
   SelectedObjects: []

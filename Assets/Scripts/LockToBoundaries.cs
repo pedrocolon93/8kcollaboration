@@ -8,7 +8,7 @@ public class LockToBoundaries : MonoBehaviour {
     //this value is used to further clamp the camera away from the edge.
     //Transform will not travel closer than nonPassibleBorderWidth from a terrain edge
     public float nonPassibleBorderWidth = 30;
-
+    public float maxHeight = 1000, minHeight = 0;
     Vector3 mapMinBounds;
     Vector3 mapMaxBounds;
     public float heightMaxMultiplier = 5;
@@ -57,9 +57,13 @@ public class LockToBoundaries : MonoBehaviour {
 	    {
 	        cameraTransformPosition.z = mapMinBounds.z;
 	    }
-        if (cameraTransformPosition.y <= 0)
+        if (cameraTransformPosition.y <= minHeight)
         {
-            cameraTransformPosition.y = 0;
+            cameraTransformPosition.y = minHeight;
+        }
+        if (cameraTransformPosition.y >= maxHeight)
+        {
+            cameraTransformPosition.y = maxHeight;
         }
 	    transform.position = cameraTransformPosition;
 	}
