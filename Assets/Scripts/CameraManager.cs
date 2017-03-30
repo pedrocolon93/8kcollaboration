@@ -37,6 +37,7 @@ public class CameraManager : MonoBehaviour, KinectGestures.GestureListenerInterf
         //Initialize the new player controller
         GameObject playerController = (GameObject)Instantiate(Resources.Load("Player"));
         playerController.GetComponent<GestureManager>().UserDetected(userId,userIndex);
+        playerController.GetComponent<InteractionManager>().playerIndex = userIndex;
         manager.refreshGestureListeners();
     }
     
