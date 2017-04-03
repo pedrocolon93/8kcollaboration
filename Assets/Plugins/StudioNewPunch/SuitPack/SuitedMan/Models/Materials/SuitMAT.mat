@@ -133,7 +133,7 @@ Material:
       second: {r: 0, g: 0.71855974, b: 0.9558824, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 19, g: 19, b: 19, a: 1}
     - first:
         name: _OutlineColor
       second: {r: 0, g: 0, b: 0, a: 1}
