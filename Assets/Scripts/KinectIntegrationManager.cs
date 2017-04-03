@@ -176,8 +176,13 @@ public class KinectIntegrationManager : MonoBehaviour {
 
                     newObjectPos = manipulatedCamera.GetComponent<Camera>().ScreenToWorldPoint(screenPixelPos) - draggedObjectOffset;
                     newObjectPos.y = manipulatedCamera.transform.position.y;
-                    manipulatedCamera.transform.position = Vector3.Lerp(manipulatedCamera.transform.position, newObjectPos,
-                        dragSpeed*Time.deltaTime);
+                    Vector3 positionDelta = Vector3.Lerp(manipulatedCamera.transform.position, newObjectPos,
+                        dragSpeed * Time.deltaTime) - manipulatedCamera.transform.position;
+                    positionDelta.z = -1 * positionDelta.z;
+                    positionDelta.x = -1 * positionDelta.x;
+                    manipulatedCamera.transform.position = manipulatedCamera.transform.position + positionDelta;
+                   // manipulatedCamera.transform.position = Vector3.Lerp(manipulatedCamera.transform.position, newObjectPos,
+                     //   dragSpeed*Time.deltaTime);
 
                     // check if the object (hand grip) was released
                     bool isReleased = isLeftHandDrag

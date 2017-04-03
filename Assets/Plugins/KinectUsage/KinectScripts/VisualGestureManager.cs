@@ -431,14 +431,12 @@ public class VisualGestureManager : MonoBehaviour
 		}
 
 		// copy the gesture database file from Resources, if available
-		if(!File.Exists(gestureDatabase))
-		{
-			TextAsset textRes = Resources.Load(gestureDatabase, typeof(TextAsset)) as TextAsset;
+		
+		TextAsset textRes = Resources.Load(gestureDatabase, typeof(TextAsset)) as TextAsset;
 			
-			if(textRes != null && textRes.bytes.Length != 0)
-			{
-				File.WriteAllBytes(gestureDatabase, textRes.bytes);
-			}
+		if(textRes != null && textRes.bytes.Length != 0)
+		{
+			File.WriteAllBytes(gestureDatabase, textRes.bytes);
 		}
 		
 		// create the vgb source

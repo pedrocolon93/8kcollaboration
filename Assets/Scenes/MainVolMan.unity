@@ -1545,7 +1545,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   discreteInfo: {fileID: 0}
+  discreteInfoString: 
   continuousInfo: {fileID: 0}
+  continuousInfoString: 
 --- !u!114 &642835189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,7 +1560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIndex: 0
-  gestureDatabase: ZoomGestures
+  gestureDatabase: ZoomGestures.gdb
   gestureNames: []
   minConfidence: 0.1
   visualGestureListeners: []

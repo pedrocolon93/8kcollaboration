@@ -65,6 +65,8 @@ public class MouseCameraMove : MonoBehaviour {
             Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - mouseOrigin);
 
             Vector3 move = new Vector3(pos.x * panSpeed, pos.y * panSpeed, 0);
+            move.x = move.x * -1;
+            move.y = move.y * -1;
             transform.Translate(move, Space.Self);
         }
 

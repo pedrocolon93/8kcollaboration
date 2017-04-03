@@ -8,9 +8,10 @@ public class SimpleVisualGestureListener : MonoBehaviour, VisualGestureListenerI
 
 	[Tooltip("GUI-Text to display the discrete gesture information.")]
 	public GUIText discreteInfo;
-
+    public string discreteInfoString = "";
 	[Tooltip("GUI-Text to display the continuous gesture information.")]
 	public GUIText continuousInfo;
+    public string continuousInfoString = "";
 
 
 	private bool discreteGestureDisplayed;
@@ -33,7 +34,8 @@ public class SimpleVisualGestureListener : MonoBehaviour, VisualGestureListenerI
 			continuousGestureDisplayed = true;
 			continuousGestureTime = Time.realtimeSinceStartup;
 		}
-	}
+        continuousInfoString = string.Format("{0} {1:F0}%", gesture, progress * 100f); 
+    }
 
 	public bool GestureCompleted(long userId, int userIndex, string gesture, float confidence)
 	{
