@@ -2121,7 +2121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTerrain: {fileID: 763875869}
-  nonPassibleBorderWidth: 30
+  nonPassibleBorderWidth: 0
   maxHeight: 80
   minHeight: 2
   heightMaxMultiplier: 5
