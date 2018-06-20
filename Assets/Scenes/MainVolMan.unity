@@ -186,7 +186,7 @@ RectTransform:
   m_GameObject: {fileID: 23754873}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 15.679596, y: 48.598816, z: -0.59061337}
-  m_LocalScale: {x: 0.012830005, y: 0.012830005, z: 0.012830005}
+  m_LocalScale: {x: 0.013109422, y: 0.013109422, z: 0.013109422}
   m_Children:
   - {fileID: 1258986817}
   m_Father: {fileID: 1980411640}
@@ -1023,9 +1023,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300008, guid: 0226ae2eda3b40f4cb91e32c6941b575, type: 3}
 --- !u!1001 &531010305
@@ -1400,7 +1400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &620691112
 Transform:
   m_ObjectHideFlags: 0
@@ -1586,7 +1586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &642835188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1615,7 +1615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIndex: 0
-  gestureDatabase: ZoomGestures.gdb
+  gestureDatabase: 
   gestureNames: []
   minConfidence: 0.1
   visualGestureListeners: []
@@ -2019,9 +2019,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 0226ae2eda3b40f4cb91e32c6941b575, type: 3}
 --- !u!1 &843360951
@@ -2092,7 +2092,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -2161,10 +2160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390f2fa5086e70945a91fe7b2bd58be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myTerrain: {fileID: 763875869}
-  nonPassibleBorderWidth: 0
-  maxHeight: 80
-  minHeight: 2
+  myTerrain: {fileID: 39215100}
+  nonPassibleBorderWidth: 30
+  maxHeight: 1000
+  minHeight: 0
   heightMaxMultiplier: 5
 --- !u!114 &843360959
 MonoBehaviour:
@@ -2177,7 +2176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eacbfd649e818d4f8b4960128b9497a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  perspectiveZoomSpeed: 0.5
+  perspectiveZoomSpeed: 20
   orthoZoomSpeed: 0.5
 --- !u!114 &843360960
 MonoBehaviour:
@@ -2185,18 +2184,18 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 843360951}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fceaeb339b971b429c4cc600acabd13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tweakMode: 0
   screenBlendMode: 1
-  hdr: 1
+  hdr: 0
   sepBlurSpread: 2.5
   quality: 1
-  bloomIntensity: 10
-  bloomThreshold: 1.5
+  bloomIntensity: 0.5
+  bloomThreshold: 0.5
   bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
   bloomBlurIterations: 2
   hollywoodFlareBlurIterations: 2
@@ -2210,13 +2209,11 @@ MonoBehaviour:
   flareColorB: {r: 0.4, g: 0.8, b: 0.8, a: 0.75}
   flareColorC: {r: 0.8, g: 0.4, b: 0.8, a: 0.75}
   flareColorD: {r: 0.8, g: 0.4, b: 0, a: 0.75}
-  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
-    type: 3}
-  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
-  screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
-  blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
-  brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
-    type: 3}
+  lensFlareVignetteMask: {fileID: 0}
+  lensFlareShader: {fileID: 0}
+  screenBlendShader: {fileID: 0}
+  blurAndFlaresShader: {fileID: 0}
+  brightPassFilterShader: {fileID: 0}
 --- !u!114 &843360961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2257,7 +2254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641dda3281d246f408ed459f3304a198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPlayers: 4
+  maxPlayers: 2
 --- !u!114 &909034305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2283,25 +2280,25 @@ MonoBehaviour:
   sensorHeight: 1
   sensorAngle: 0
   autoHeightAngle: 0
-  computeUserMap: 3
+  computeUserMap: 1
   computeColorMap: 0
   computeInfraredMap: 0
-  displayUserMap: 1
+  displayUserMap: 0
   displayColorMap: 0
-  displaySkeletonLines: 1
+  displaySkeletonLines: 0
   DisplayMapsWidthPercent: 20
   useMultiSourceReader: 0
   minUserDistance: 0.5
   maxUserDistance: 0
   maxLeftRightDistance: 0
-  maxTrackedUsers: 4
+  maxTrackedUsers: 6
   showTrackedUsersOnly: 1
   userDetectionOrder: 0
-  ignoreInferredJoints: 1
+  ignoreInferredJoints: 0
   ignoreZCoordinates: 0
   lateUpdateAvatars: 0
-  smoothing: 2
-  useBoneOrientationConstraints: 1
+  smoothing: 1
+  useBoneOrientationConstraints: 0
   allowTurnArounds: 0
   allowedHandRotations: 1
   waitTimeBeforeRemove: 1
@@ -2970,9 +2967,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: 0226ae2eda3b40f4cb91e32c6941b575, type: 3}
 --- !u!1 &1219111161
@@ -3003,9 +3000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa82c09d97e89e4cbc6713af7596bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DatasetName: 20140407_usgspostsandy_19TCG300905.laz
-  DatasetLocation: Resources/LidarData
-  scaleFactor: 1000
 --- !u!4 &1219111163
 Transform:
   m_ObjectHideFlags: 0
@@ -3031,7 +3025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dataPath: 
-  matVertex: {fileID: 2100000, guid: 693c4196156fb53418bede00328961a6, type: 2}
+  matVertex: {fileID: 0}
   scale: 1
   invertYZ: 0
   forceReload: 0
@@ -3576,15 +3570,11 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300012, guid: 0226ae2eda3b40f4cb91e32c6941b575, type: 3}
---- !u!1 &1454931566 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 139742, guid: 1d3b1a1513de66247974634911345b98, type: 2}
-  m_PrefabInternal: {fileID: 1712938953}
 --- !u!1001 &1507299019
 Prefab:
   m_ObjectHideFlags: 0
@@ -3717,9 +3707,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 0226ae2eda3b40f4cb91e32c6941b575, type: 3}
 --- !u!4 &1545793257
@@ -3869,9 +3859,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300010, guid: 0226ae2eda3b40f4cb91e32c6941b575, type: 3}
 --- !u!1 &1576069618
@@ -4766,10 +4756,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e7e1e9b426e7f4a8b24494bc8dbe8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaldoRoot: {fileID: 1454931566}
+  WaldoRoot: {fileID: 479968766}
   TerrainGameObject: {fileID: 39215100}
   CityGameObject: {fileID: 620691111}
-  maxAttempts: 100000
+  maxAttempts: 1000000
 --- !u!4 &1984312070
 Transform:
   m_ObjectHideFlags: 0
@@ -4963,9 +4953,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 0
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300004, guid: 0226ae2eda3b40f4cb91e32c6941b575, type: 3}
 --- !u!1 &2031296823
@@ -4994,8 +4984,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2031296823}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 7.032593, y: 4.6545563, z: -57.851173}
-  m_LocalScale: {x: 0.012830005, y: 0.012830005, z: 0.012830005}
+  m_LocalPosition: {x: 7.0325623, y: 4.6545563, z: -57.851173}
+  m_LocalScale: {x: 0.013109422, y: 0.013109422, z: 0.013109422}
   m_Children:
   - {fileID: 543217565}
   m_Father: {fileID: 1984312070}
